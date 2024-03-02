@@ -51,7 +51,6 @@ if ($ips -eq $null) {
 }
   
  
- Write-Host  $ips
 
  Get-EventLog -LogName Security   -Newest $LatestRecords |
    where {$_.EntryType -eq "FailureAudit" }  |
@@ -117,7 +116,6 @@ Write-Host "
 Updating Firewall rule named"  $FirewallRuleName
  
   
- Write-Host  $ips
 
 Set-NetFirewallRule -DisplayName $FirewallRuleName  -Action Block -RemoteAddress $ips
 
