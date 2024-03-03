@@ -2,7 +2,7 @@
  # Sergei Korneev 2024
  
  
- # Get latest n records
+ # Get latest n records from windows security logs
  $LatestRecords = 3000
 
  # Ip Regexp
@@ -11,13 +11,13 @@
  # SubNet regexp
  $SubnetRegexp = '\d{1,3}\.\d{1,3}\.\d{1,3}\.'
 
- # Mask 
+ # Subnet Mask 
  $Mask = '255.255.255.0'
  
  # Firewall Ip Name
  $FirewallRuleName = 'Fail2Ban (Sergei Korneev)'
 
- # Unsuccesful logins
+ # Unsuccesful logins count
  $CountToBan  = 3
 
 
@@ -27,7 +27,7 @@
  
  # Exclusions list 
  #$Exclusions = @('80.66.88.214')
- $Exclusions = @('91.188.144.0/21', '91.188.144.0/24')
+ $Exclusions = @('92.188.144.0/21', '92.188.144.0/24')
 
 Write-Host "
 
