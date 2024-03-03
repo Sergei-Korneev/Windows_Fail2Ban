@@ -14,7 +14,7 @@
  # Subnet Mask 
  $Mask = '255.255.255.0'
  
- # Firewall Ip Name
+ # Firewall rule Name
  $FirewallRuleName = 'Fail2Ban (Sergei Korneev)'
 
  # Unsuccesful logins count
